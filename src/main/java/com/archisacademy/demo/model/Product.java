@@ -1,4 +1,4 @@
-package com.archisacademy.demo.model;
+package com.archisacademy.ecommerceoctobersubs1.model;
 
 import jakarta.persistence.*;
 
