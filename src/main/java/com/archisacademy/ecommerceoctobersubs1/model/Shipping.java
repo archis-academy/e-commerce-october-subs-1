@@ -12,7 +12,7 @@ public class Shipping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
     @Column(name = "shipping_address")
     private String shippingAddress;
     @Column(name = "shipping_date")
