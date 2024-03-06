@@ -3,6 +3,7 @@ package com.archisacademy.ecommerceoctobersubs1.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -13,7 +14,9 @@ public class Wishlist {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "product_uuid")
-    private UUID productUUID;
+    @Column(name = "uuid")
+    private String UUID;
+    @Column(name = "product_uuids")
+    private List<String> productUUIDs;
 
 }
