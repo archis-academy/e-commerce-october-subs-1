@@ -16,7 +16,7 @@ public class Shipping {
     @Column(name = "shipping_address")
     private String shippingAddress;
     @Column(name = "shipping_date")
-    private LocalDate shippingDate;
+    private Timestamp shippingDate;
     @Column(name = "tracking_information")
     private String trackingInformation;
 
