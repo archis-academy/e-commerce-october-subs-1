@@ -16,7 +16,7 @@ public class Product {
     @Column(name="description")
     private String description;
     @Column(name="price")
-    private int price;
+    private double price;
     @Column(name="stock_quantity")
     private int stockQuantity;
     @Column(name="product_image")
