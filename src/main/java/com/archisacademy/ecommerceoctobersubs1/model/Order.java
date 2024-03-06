@@ -13,8 +13,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name="number")
-    private Long number;
+    @Column(name="order_number")
+    private Long orderNumber;
     @Column(name="date")
     private LocalDate date;
     @Column(name="total_amount")
