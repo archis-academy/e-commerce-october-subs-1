@@ -3,7 +3,6 @@ package com.archisacademy.ecommerceoctobersubs1.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.UUID;
 
 @Entity
 @Table(name = "payments")
@@ -14,7 +13,7 @@ public class Payment {
     @Column(name = "id")
     private Integer id;
     @Column(name="transaction_uuid")
-    private UUID transactionUUID;
+    private String transactionUUID;
     @Column(name = "payment_method")
     private String paymentMethod;
     @Column(name = "payment_status")
