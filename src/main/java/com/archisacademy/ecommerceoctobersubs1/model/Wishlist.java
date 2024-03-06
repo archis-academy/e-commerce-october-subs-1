@@ -17,6 +17,6 @@ public class Wishlist {
     @Column(name = "uuid")
     private String UUID;
     @Column(name = "product_uuids")
-    private List<String> productUUIDs;
+    private String productUUIDs;
 
 }
