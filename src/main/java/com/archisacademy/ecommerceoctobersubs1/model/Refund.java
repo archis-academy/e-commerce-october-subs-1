@@ -20,4 +20,8 @@ public class Refund {
     @Column(name = "refund_date")
     private LocalDate refundDate;
 
+    @OneToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
 }

@@ -3,6 +3,8 @@ package com.archisacademy.ecommerceoctobersubs1.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Table(name = "users")
 @Data
@@ -21,4 +23,17 @@ public class User {
     private String password;
     @Column(name="address")
     private String address;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Order> orders;
+
+    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY)
+    private Wishlist wishlist;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<CardDetails> cardDetails;
+
+    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY)
+    private Cart cart;
+
 }

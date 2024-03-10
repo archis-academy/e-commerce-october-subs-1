@@ -25,4 +25,8 @@ public class CardDetails {
     private String cardType;
     @Column(name = "is_active")
     private Boolean isActive;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

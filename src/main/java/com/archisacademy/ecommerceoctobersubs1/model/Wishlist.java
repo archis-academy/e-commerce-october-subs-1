@@ -19,4 +19,7 @@ public class Wishlist {
     @Column(name = "product_uuids")
     private String productUUIDs;
 
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }

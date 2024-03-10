@@ -3,7 +3,7 @@ package com.archisacademy.ecommerceoctobersubs1.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.security.Timestamp;
 
 @Entity
 @Table(name = "shippings")
@@ -19,5 +19,9 @@ public class Shipping {
     private Timestamp shippingDate;
     @Column(name = "tracking_information")
     private String trackingInformation;
+
+    @OneToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
 
 }
