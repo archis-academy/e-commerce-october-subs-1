@@ -19,4 +19,8 @@ public class Payment {
     @Column(name = "payment_status")
     private boolean paymentStatus;
 
+    @OneToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
 }
